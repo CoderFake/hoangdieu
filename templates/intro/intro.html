@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load sass_tags %}
+
+{% block cssblock %}
+    <link rel="stylesheet" href="{% static 'admin/css/intro.css' %}">
+{% endblock %}
+{% block content %}
+    <div class="main-content">
+        <header class="container header active" id="home">
+            <div class="header-content">
+                <div class="left-header">
+                    <div class="h-shape"></div>
+                    <div class="image">
+                        <img src="{% static 'admin/img/hero.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="right-header">
+                    <h1 class="name">
+                        Hi, I'm <span>Hoang Dieu.</span>
+                        An IT Developer.
+                    </h1>
+                    <p>
+                        My aspiration is to become an IT manager, a career path that I believe will offer me a rewarding professional journey. In order to materialize this dream, I recognize the importance of acquiring extensive experience in the field, which necessitates working as a web developer for an extended period.<br>
+                        Assuming the role of an IT manager not only aligns with my long-term goals but also promises ample opportunities for advancement within the industry. This path, I believe, will enable me to continually expand my horizons and contribute significantly to the organizations I serve.
+                    </p>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="container about" id="about">
+                <div class="main-title">
+                    <h2>About <span>me</span><span class="bg-text"></span></h2>
+                </div>
+                <div class="about-container">
+                    <div class="left-about">
+                        <h4>Information About me</h4>
+                        <p>
+                            <i>Name:</i><b> &#160;Hoang Van Dieu</b><br>
+                            <i>Date of birth: </i> &#160; 22/03/2002 <br>
+                            <i>Gender: </i> &#160; Male <br>
+                            <i>Address:</i> &#160; Nam Thang, Tien Hai, Thai Binh <br>
+                            <i>Work: <a href = "https://portal.ptit.edu.vn/"><i> &#160;<b><u style ="color: red;">PTIT -</u></b></i>&#160;Posts and Telecommunications Institute of Technology </a></i><br>
+                        </p>
+                    </div>
+                    <div class="right-about">
+                        <div class="about-item">
+                            <a href="https://www.facebook.com/hoangdieu.22022002/"><div class="abt-text">
+                                <p class="large-text"><i class="fab fa-facebook-f"></i></p>
+                                <p class="small-text">Facebook <br /> Contact</p>
+                            </div></a>
+                        </div>
+                        <div class="about-item">
+                            <a href="http://zaloapp.com/qr/p/9c3hy89az3v6"><div class="abt-text">
+                                <p class="large-text"><i class='fas fa-sms'></i></p>
+                                <p class="small-text">Zalo <br /> Contact</p>
+                            </div></a>
+                        </div>
+                        <div class="about-item">
+
+                            <a href="tel:0387367162"><div class="abt-text">
+                                <p class="large-text"><i class='fas fa-phone-alt'></i></p>
+                                <p class="small-text">Phone <br />Number</p>
+                            </div></a>
+                        </div>
+                        <div class="about-item">
+                            <a href="mailto: hoangdieu22022002@gmail.com"><div class="abt-text">
+                                <p class="large-text"><i class='fas fa-envelope'></i></p>
+                                <p class="small-text">Mail <br />Contact</p>
+                            </div></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div class="controls">
+            <div class="control active-btn" data-id="home" >
+                <i class="fas fa-home"></i>
+            </div>
+            <div class="control" data-id="about">
+                <i class="fas fa-user"></i>
+            </div>
+        </div>
+        <div class="theme-btn">
+            <i class="fas fa-adjust"></i>
+        </div>
+    </div>
+{% endblock %}
+
+{% block jsblock %}
+    <script src="{% static 'admin/js/app.js' %}"></script>
+{% endblock %}
+
